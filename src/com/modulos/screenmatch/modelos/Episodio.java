@@ -1,6 +1,6 @@
 package com.modulos.screenmatch.modelos;
 
-import com.modulos.screenmacth.calculos.Clasificable;
+import com.modulos.screenmatch.calculos.Clasificable;
 
 public class Episodio implements Clasificable {
     private int numero;
@@ -42,9 +42,9 @@ public class Episodio implements Clasificable {
 
     @Override
     public int getClasificacion() {
-        if (totalVisualizaciones > 100){
+        if (totalVisualizaciones > 100) {
             return 4;
-        }else {
+        } else {
             return 2;
         }
     }

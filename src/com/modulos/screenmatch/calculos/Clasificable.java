@@ -1,2 +1,5 @@
-package com.modulos.screenmatch.calculos;public class Clasificable {
+package com.modulos.screenmatch.calculos;
+
+public interface Clasificable {
+    int getClasificacion();
 }

@@ -1,14 +1,16 @@
-package com.modulos.screenmacth.calculos;
+package com.modulos.screenmatch.calculos;
 
 public class FiltroRecomendacion {
 
-    public void filtra(Clasificable clasificacion) {
-        if (clasificacion.getClasificacion() >= 4) {
-            System.out.println("Muy bien evaluado en el momento");
-        } else if (clasificacion.getClasificacion() >= 2) {
-            System.out.println("popular en el momento");
+    private String recomendacion;
+
+    public void filtra(Clasificable clasificable) {
+        if (clasificable.getClasificacion() >= 4) {
+            System.out.println("Está entre los favoritos del momento");
+        } else if (clasificable.getClasificacion() >= 2) {
+            System.out.println("Bien evaluado actualmente");
         } else {
-            System.out.println("Colocálo en tu lista para verlo después");
+            System.out.println("Colocalo en tu lista para verlo después");
         }
     }
 }
